@@ -1,0 +1,2618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chirag Media House | Let Your Business Get Noticed.</title>
+
+<meta name="description" content="Chirag Media House is a digital marketing and creative agency helping businesses with digital marketing, ads, websites, videos, product shoots and creative ideas.">
+<meta name="keywords" content="Digital Marketing Bikaner, Digital Marketing Agency Bikaner, Meta Ads Bikaner, Website Design Bikaner, Chirag Media House">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --navy:#071A2E;
+    --gold:#C9A24E;
+    --white:#FFFFFF;
+    --charcoal:#171B21;
+    --muted:#9CA5B1;
+    --line:rgba(255,255,255,0.12);
+    --soft-line:rgba(201,162,78,0.25);
+    --max:1280px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--navy);
+    color:var(--white);
+    font-family:"Inter",sans-serif;
+    overflow-x:hidden;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+button,
+input,
+textarea{
+    font-family:inherit;
+}
+
+::selection{
+    background:var(--gold);
+    color:var(--navy);
+}
+
+/* =========================
+   GLOBAL
+========================= */
+
+.container{
+    width:min(92%,var(--max));
+    margin:auto;
+}
+
+.section{
+    padding:120px 0;
+    position:relative;
+}
+
+.eyebrow{
+    color:var(--gold);
+    text-transform:uppercase;
+    letter-spacing:4px;
+    font-size:11px;
+    font-weight:700;
+    margin-bottom:22px;
+}
+
+.section-title{
+    font-family:"Montserrat",sans-serif;
+    font-size:clamp(42px,6vw,82px);
+    line-height:.98;
+    letter-spacing:-3px;
+    font-weight:700;
+}
+
+.section-title span{
+    color:var(--gold);
+}
+
+.section-description{
+    color:var(--muted);
+    max-width:650px;
+    font-size:17px;
+    line-height:1.8;
+    margin-top:28px;
+}
+
+.gold-line{
+    width:70px;
+    height:1px;
+    background:var(--gold);
+    margin:30px 0;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    background:rgba(7,26,46,.88);
+    backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(255,255,255,.06);
+}
+
+.nav{
+    height:82px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-mark{
+    width:42px;
+    height:42px;
+    border:1px solid var(--gold);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--gold);
+    font-family:"Montserrat",sans-serif;
+    font-size:14px;
+    font-weight:800;
+    letter-spacing:-1px;
+}
+
+.logo-text{
+    font-family:"Montserrat",sans-serif;
+    font-weight:700;
+    font-size:15px;
+    letter-spacing:1.5px;
+}
+
+.logo-text small{
+    display:block;
+    color:var(--gold);
+    font-size:7px;
+    letter-spacing:3px;
+    margin-top:3px;
+}
+
+.nav-links{
+    display:flex;
+    gap:34px;
+    align-items:center;
+}
+
+.nav-links a{
+    color:#D8DDE3;
+    font-size:13px;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--gold);
+}
+
+.nav-cta{
+    border:1px solid var(--gold);
+    padding:12px 20px;
+    color:var(--gold)!important;
+}
+
+.nav-cta:hover{
+    background:var(--gold);
+    color:var(--navy)!important;
+}
+
+.menu-btn{
+    display:none;
+    border:1px solid var(--line);
+    background:none;
+    color:white;
+    width:42px;
+    height:42px;
+    cursor:pointer;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+    padding-top:82px;
+}
+
+.hero-grid{
+    position:absolute;
+    inset:0;
+    background-image:
+        linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+    background-size:80px 80px;
+    mask-image:linear-gradient(to bottom,black,transparent 90%);
+}
+
+.hero-glow{
+    position:absolute;
+    width:500px;
+    height:500px;
+    right:-180px;
+    top:15%;
+    border:1px solid rgba(201,162,78,.12);
+    border-radius:50%;
+}
+
+.hero-glow:before,
+.hero-glow:after{
+    content:"";
+    position:absolute;
+    border:1px solid rgba(201,162,78,.08);
+    border-radius:50%;
+}
+
+.hero-glow:before{
+    inset:60px;
+}
+
+.hero-glow:after{
+    inset:130px;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:1100px;
+}
+
+.hero-kicker{
+    color:var(--gold);
+    text-transform:uppercase;
+    font-size:12px;
+    letter-spacing:5px;
+    font-weight:700;
+    margin-bottom:30px;
+}
+
+.hero h1{
+    font-family:"Montserrat",sans-serif;
+    font-size:clamp(55px,9vw,130px);
+    line-height:.88;
+    letter-spacing:-6px;
+    max-width:1100px;
+    font-weight:800;
+}
+
+.hero h1 span{
+    color:var(--gold);
+}
+
+.hero-sub{
+    max-width:620px;
+    color:#AAB3BE;
+    font-size:18px;
+    line-height:1.8;
+    margin-top:38px;
+}
+
+.hero-actions{
+    display:flex;
+    gap:14px;
+    margin-top:42px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:52px;
+    padding:0 25px;
+    border:1px solid var(--gold);
+    font-size:13px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:var(--gold);
+    color:var(--navy);
+}
+
+.btn-primary:hover{
+    background:#DFC274;
+}
+
+.btn-outline{
+    color:var(--gold);
+}
+
+.btn-outline:hover{
+    background:rgba(201,162,78,.1);
+}
+
+.hero-bottom{
+    position:absolute;
+    bottom:35px;
+    left:4%;
+    color:#68727F;
+    font-size:10px;
+    text-transform:uppercase;
+    letter-spacing:4px;
+}
+
+/* =========================
+   INTRO
+========================= */
+
+.intro{
+    border-top:1px solid var(--line);
+}
+
+.intro-layout{
+    display:grid;
+    grid-template-columns:1fr 1.4fr;
+    gap:100px;
+}
+
+.intro-big{
+    font-family:"Montserrat",sans-serif;
+    font-size:clamp(35px,5vw,65px);
+    line-height:1.05;
+    letter-spacing:-2px;
+}
+
+.intro-big span{
+    color:var(--gold);
+}
+
+.intro-copy{
+    color:#AEB7C2;
+    font-size:18px;
+    line-height:1.9;
+}
+
+.intro-copy strong{
+    color:white;
+}
+
+/* =========================
+   STATS
+========================= */
+
+.stats{
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+}
+
+.stat{
+    padding:50px 35px;
+    border-right:1px solid var(--line);
+}
+
+.stat:first-child{
+    border-left:1px solid var(--line);
+}
+
+.stat-number{
+    font-family:"Montserrat",sans-serif;
+    font-size:clamp(45px,5vw,72px);
+    font-weight:800;
+    letter-spacing:-3px;
+    color:white;
+}
+
+.stat-number span{
+    color:var(--gold);
+}
+
+.stat-label{
+    margin-top:12px;
+    color:#7E8996;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:10px;
+}
+
+/* =========================
+   MARQUEE
+========================= */
+
+.marquee{
+    overflow:hidden;
+    border-bottom:1px solid var(--line);
+    padding:28px 0;
+}
+
+.marquee-track{
+    display:flex;
+    width:max-content;
+    animation:marquee 25s linear infinite;
+}
+
+.marquee span{
+    font-family:"Montserrat",sans-serif;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:3px;
+    color:#7C8793;
+    white-space:nowrap;
+    padding-right:55px;
+}
+
+.marquee span::after{
+    content:"✦";
+    color:var(--gold);
+    margin-left:55px;
+}
+
+@keyframes marquee{
+    from{transform:translateX(0);}
+    to{transform:translateX(-50%);}
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.services-head{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:80px;
+    margin-bottom:70px;
+}
+
+.services-list{
+    border-top:1px solid var(--line);
+}
+
+.service{
+    display:grid;
+    grid-template-columns:90px 1fr 50px;
+    align-items:center;
+    gap:20px;
+    padding:34px 0;
+    border-bottom:1px solid var(--line);
+    transition:.35s;
+}
+
+.service:hover{
+    padding-left:18px;
+    border-color:var(--soft-line);
+}
+
+.service-num{
+    color:var(--gold);
+    font-family:"Montserrat",sans-serif;
+    font-size:13px;
+    font-weight:700;
+}
+
+.service h3{
+    font-family:"Montserrat",sans-serif;
+    font-size:clamp(24px,3vw,38px);
+    letter-spacing:-1px;
+}
+
+.service p{
+    color:#7F8995;
+    margin-top:8px;
+    line-height:1.6;
+    font-size:14px;
+}
+
+.service-arrow{
+    color:var(--gold);
+    font-size:22px;
+    text-align:right;
+}
+
+/* =========================
+   INDUSTRIES
+========================= */
+
+.industries{
+    background:#050F1B;
+}
+
+.industry-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    margin-top:70px;
+    border-top:1px solid var(--line);
+    border-left:1px solid var(--line);
+}
+
+.industry{
+    min-height:150px;
+    padding:30px;
+    border-right:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    transition:.3s;
+}
+
+.industry:hover{
+    background:rgba(201,162,78,.04);
+}
+
+.industry-number{
+    color:#56616D;
+    font-size:11px;
+    letter-spacing:2px;
+}
+
+.industry h3{
+    font-family:"Montserrat",sans-serif;
+    font-size:21px;
+}
+
+.industry p{
+    color:#737E8A;
+    font-size:12px;
+    margin-top:8px;
+}
+
+/* =========================
+   WHY US
+========================= */
+
+.why-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:1px;
+    background:var(--line);
+    margin-top:70px;
+}
+
+.why-card{
+    background:var(--navy);
+    padding:45px;
+    min-height:240px;
+}
+
+.why-number{
+    color:var(--gold);
+    font-family:"Montserrat",sans-serif;
+    font-size:12px;
+}
+
+.why-card h3{
+    font-family:"Montserrat",sans-serif;
+    font-size:25px;
+    margin:30px 0 15px;
+}
+
+.why-card p{
+    color:#808B97;
+    line-height:1.7;
+    font-size:14px;
+}
+
+/* =========================
+   META ADS
+========================= */
+
+.ads-section{
+    background:#F5F6F8;
+    color:var(--navy);
+}
+
+.ads-section .eyebrow{
+    color:#8B6A24;
+}
+
+.ads-section .section-description{
+    color:#5D6670;
+}
+
+.ads-layout{
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    gap:80px;
+    align-items:center;
+}
+
+.ads-title{
+    font-family:"Montserrat",sans-serif;
+    font-size:clamp(42px,5vw,72px);
+    line-height:1;
+    letter-spacing:-3px;
+}
+
+.ads-title span{
+    color:#9B772B;
+}
+
+.ads-box{
+    border:1px solid #D7D9DD;
+    background:white;
+    padding:38px;
+}
+
+.ads-box h3{
+    font-family:"Montserrat",sans-serif;
+    margin-bottom:25px;
+    font-size:22px;
+}
+
+.ads-row{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    padding:17px 0;
+    border-bottom:1px solid #E5E6E8;
+    font-size:14px;
+}
+
+.ads-row:last-child{
+    border-bottom:0;
+}
+
+.ads-row span:last-child{
+    font-weight:700;
+}
+
+.ads-note{
+    margin-top:25px;
+    color:#727982;
+    font-size:12px;
+    line-height:1.7;
+}
+
+/* =========================
+   PROCESS
+========================= */
+
+.process{
+    background:#050F1B;
+}
+
+.process-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    margin-top:70px;
+}
+
+.process-card{
+    padding:35px;
+    border-top:1px solid var(--line);
+    border-right:1px solid var(--line);
+}
+
+.process-card:first-child{
+    border-left:1px solid var(--line);
+}
+
+.process-num{
+    color:var(--gold);
+    font-size:12px;
+    letter-spacing:2px;
+}
+
+.process-card h3{
+    font-family:"Montserrat",sans-serif;
+    font-size:24px;
+    margin:50px 0 15px;
+}
+
+.process-card p{
+    color:#77828F;
+    line-height:1.7;
+    font-size:14px;
+}
+
+/* =========================
+   TRUST
+========================= */
+
+.trust{
+    text-align:center;
+}
+
+.trust-content{
+    max-width:900px;
+    margin:auto;
+}
+
+.client-names{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+    margin-top:50px;
+}
+
+.client-name{
+    border:1px solid var(--line);
+    padding:14px 22px;
+    color:#AAB3BD;
+    font-size:13px;
+}
+
+.client-note{
+    margin-top:30px;
+    color:#68737F;
+    font-size:12px;
+}
+
+/* =========================
+   FAQ
+========================= */
+
+.faq-list{
+    max-width:950px;
+    margin:70px auto 0;
+}
+
+.faq-item{
+    border-top:1px solid var(--line);
+}
+
+.faq-item:last-child{
+    border-bottom:1px solid var(--line);
+}
+
+.faq-question{
+    width:100%;
+    padding:28px 0;
+    background:none;
+    border:0;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    cursor:pointer;
+    font-family:"Montserrat",sans-serif;
+    font-size:19px;
+    text-align:left;
+}
+
+.faq-icon{
+    color:var(--gold);
+    font-size:22px;
+}
+
+.faq-answer{
+    display:none;
+    color:#7E8995;
+    line-height:1.8;
+    font-size:14px;
+    padding:0 0 28px;
+    max-width:800px;
+}
+
+.faq-item.active .faq-answer{
+    display:block;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact{
+    background:#F5F6F8;
+    color:var(--navy);
+}
+
+.contact-layout{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:100px;
+}
+
+.contact .eyebrow{
+    color:#8B6A24;
+}
+
+.contact-title{
+    font-family:"Montserrat",sans-serif;
+    font-size:clamp(45px,6vw,80px);
+    line-height:.95;
+    letter-spacing:-4px;
+}
+
+.contact-title span{
+    color:#9B772B;
+}
+
+.contact-info{
+    margin-top:45px;
+}
+
+.contact-item{
+    padding:18px 0;
+    border-bottom:1px solid #D8DBDF;
+}
+
+.contact-label{
+    text-transform:uppercase;
+    font-size:9px;
+    letter-spacing:3px;
+    color:#818892;
+    margin-bottom:6px;
+}
+
+.contact-value{
+    font-size:16px;
+    font-weight:600;
+}
+
+.contact-form{
+    background:white;
+    padding:40px;
+    border:1px solid #E0E2E5;
+}
+
+.form-group{
+    margin-bottom:20px;
+}
+
+.form-group label{
+    display:block;
+    font-size:10px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    margin-bottom:8px;
+    color:#777F88;
+}
+
+.form-group input,
+.form-group textarea{
+    width:100%;
+    border:1px solid #D8DBDF;
+    padding:16px;
+    outline:none;
+    background:#FAFAFA;
+    color:var(--navy);
+    font-size:14px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+    border-color:#B38C3C;
+}
+
+.form-group textarea{
+    min-height:130px;
+    resize:vertical;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#030A11;
+    border-top:1px solid var(--line);
+    padding:60px 0 30px;
+}
+
+.footer-top{
+    display:flex;
+    justify-content:space-between;
+    gap:40px;
+    align-items:flex-start;
+}
+
+.footer-brand{
+    max-width:400px;
+}
+
+.footer-brand h2{
+    font-family:"Montserrat",sans-serif;
+    font-size:28px;
+}
+
+.footer-brand p{
+    color:#697581;
+    font-size:13px;
+    line-height:1.7;
+    margin-top:15px;
+}
+
+.footer-links{
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.footer-links a{
+    color:#8A949F;
+    font-size:12px;
+}
+
+.footer-links a:hover{
+    color:var(--gold);
+}
+
+.footer-bottom{
+    border-top:1px solid var(--line);
+    margin-top:50px;
+    padding-top:25px;
+    display:flex;
+    justify-content:space-between;
+    color:#4E5964;
+    font-size:10px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+/* =========================
+   WHATSAPP
+========================= */
+
+.whatsapp{
+    position:fixed;
+    right:24px;
+    bottom:24px;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    background:#25D366;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:900;
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+    font-size:25px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.whatsapp:hover{
+    transform:translateY(-5px);
+}
+
+/* =========================
+   SCROLL REVEAL
+========================= */
+
+.reveal{
+    opacity:1;
+    transform:none;
+}
+
+.js-ready .reveal{
+    opacity:0;
+    transform:translateY(25px);
+    transition:opacity .8s ease, transform .8s ease;
+}
+
+.js-ready .reveal.visible{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:900px){
+
+    .nav-links{
+        position:absolute;
+        top:82px;
+        left:0;
+        width:100%;
+        background:#071A2E;
+        border-top:1px solid var(--line);
+        display:none;
+        flex-direction:column;
+        padding:25px;
+        align-items:flex-start;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .nav-cta{
+        width:100%;
+        text-align:center;
+    }
+
+    .intro-layout,
+    .ads-layout,
+    .contact-layout{
+        grid-template-columns:1fr;
+        gap:50px;
+    }
+
+    .stats-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .stat{
+        border-bottom:1px solid var(--line);
+    }
+
+    .services-head{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+    .industry-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .process-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .process-card{
+        border-bottom:1px solid var(--line);
+    }
+
+    .footer-top{
+        flex-direction:column;
+    }
+}
+
+@media(max-width:600px){
+
+    .section{
+        padding:85px 0;
+    }
+
+    .container{
+        width:88%;
+    }
+
+    .hero{
+        min-height:100svh;
+    }
+
+    .hero h1{
+        font-size:clamp(48px,14vw,78px);
+        letter-spacing:-3px;
+    }
+
+    .hero-sub{
+        font-size:15px;
+    }
+
+    .hero-bottom{
+        display:none;
+    }
+
+    .stats-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .stat{
+        padding:30px 18px;
+    }
+
+    .stat-number{
+        font-size:42px;
+    }
+
+    .stat-label{
+        font-size:8px;
+    }
+
+    .service{
+        grid-template-columns:40px 1fr 20px;
+        gap:10px;
+        padding:27px 0;
+    }
+
+    .service h3{
+        font-size:23px;
+    }
+
+    .service p{
+        font-size:12px;
+    }
+
+    .industry-grid{
+        grid-template-columns:1fr;
+    }
+
+    .industry{
+        min-height:120px;
+    }
+
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+
+    .why-card{
+        padding:32px;
+        min-height:auto;
+    }
+
+    .process-grid{
+        grid-template-columns:1fr;
+    }
+
+    .process-card{
+        border-left:1px solid var(--line);
+        min-height:230px;
+    }
+
+    .contact-form{
+        padding:25px;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .whatsapp{
+        width:52px;
+        height:52px;
+        right:18px;
+        bottom:18px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+    <div class="container nav">
+
+        <a href="#home" class="logo">
+
+            <div class="logo-mark">
+                CMH
+            </div>
+
+            <div class="logo-text">
+                CHIRAG MEDIA HOUSE
+                <small>LET YOUR BUSINESS GET NOTICED.</small>
+            </div>
+
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#industries">Industries</a>
+            <a href="#process">Process</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact" class="nav-cta">Let's Talk</a>
+
+        </nav>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Open Menu">
+            ☰
+        </button>
+
+    </div>
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+
+    <div class="container">
+
+        <div class="hero-content reveal">
+
+            <div class="hero-kicker">
+                Digital Marketing • Creative • Advertising
+            </div>
+
+            <h1>
+                Let Your<br>
+                Business Get <span>Noticed.</span>
+            </h1>
+
+            <p class="hero-sub">
+                Chirag Media House helps businesses build stronger digital
+                presence through marketing, advertising, websites, content
+                and ideas that people remember.
+            </p>
+
+            <div class="hero-actions">
+
+                <a href="#services" class="btn btn-primary">
+                    Explore Services
+                </a>
+
+                <a href="https://wa.me/916375637357?text=Hello%20Chirag%20Media%20House,%20I%20want%20to%20discuss%20my%20business."
+                   target="_blank"
+                   class="btn btn-outline">
+                    Start a Conversation
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="hero-bottom">
+        Scroll to explore ↓
+    </div>
+
+</section>
+
+
+<!-- =========================
+     INTRO
+========================= -->
+
+<section class="section intro" id="about">
+
+    <div class="container">
+
+        <div class="intro-layout">
+
+            <div class="reveal">
+
+                <div class="eyebrow">
+                    Built For Attention
+                </div>
+
+                <h2 class="intro-big">
+                    Good businesses deserve to be <span>seen.</span>
+                </h2>
+
+            </div>
+
+            <div class="intro-copy reveal">
+
+                <div class="gold-line"></div>
+
+                <p>
+                    Chirag Media House is a digital marketing and creative
+                    agency based in Bikaner, Rajasthan.
+                </p>
+
+                <br>
+
+                <p>
+                    We work with businesses across different industries to
+                    improve how they present themselves, communicate with
+                    customers and grow through digital channels.
+                </p>
+
+                <br>
+
+                <p>
+                    From <strong>ads and social media</strong> to
+                    <strong>websites, videos, product shoots and creative
+                    ideas</strong>, we bring the important pieces together
+                    under one roof.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     STATS
+========================= -->
+
+<section class="stats">
+
+    <div class="container">
+
+        <div class="stats-grid">
+
+            <div class="stat reveal">
+                <div class="stat-number">
+                    <span class="counter" data-target="5">0</span><span>+</span>
+                </div>
+                <div class="stat-label">
+                    Years of Professional Work
+                </div>
+            </div>
+
+            <div class="stat reveal">
+                <div class="stat-number">
+                    <span class="counter" data-target="84">0</span>
+                </div>
+                <div class="stat-label">
+                    Clients Worked With
+                </div>
+            </div>
+
+            <div class="stat reveal">
+                <div class="stat-number">
+                    <span class="counter" data-target="252">0</span>
+                </div>
+                <div class="stat-label">
+                    Projects Delivered
+                </div>
+            </div>
+
+            <div class="stat reveal">
+                <div class="stat-number">
+                    <span class="counter" data-target="500">0</span><span>+</span>
+                </div>
+                <div class="stat-label">
+                    Campaigns
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     MARQUEE
+========================= -->
+
+<div class="marquee">
+
+    <div class="marquee-track">
+
+        <span>Digital Marketing</span>
+        <span>Meta Ads</span>
+        <span>Google Ads</span>
+        <span>Websites</span>
+        <span>Videos & Reels</span>
+        <span>Product Shoot</span>
+        <span>Creative Ideas</span>
+
+        <span>Digital Marketing</span>
+        <span>Meta Ads</span>
+        <span>Google Ads</span>
+        <span>Websites</span>
+        <span>Videos & Reels</span>
+        <span>Product Shoot</span>
+        <span>Creative Ideas</span>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section class="section" id="services">
+
+    <div class="container">
+
+        <div class="services-head">
+
+            <div class="reveal">
+
+                <div class="eyebrow">
+                    What We Do
+                </div>
+
+                <h2 class="section-title">
+                    Services that<br>
+                    create <span>momentum.</span>
+                </h2>
+
+            </div>
+
+            <div class="section-description reveal">
+
+                <p>
+                    Your business does not need more random posts.
+                    It needs the right message, the right creative and
+                    the right distribution.
+                </p>
+
+                <p style="margin-top:20px;">
+                    We combine strategy, creativity and execution to create
+                    digital marketing that makes sense for your business.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="services-list">
+
+            <a href="#contact" class="service reveal">
+
+                <div class="service-num">01</div>
+
+                <div>
+                    <h3>Digital Marketing</h3>
+                    <p>
+                        Social media, content planning and digital strategy
+                        designed around your business goals.
+                    </p>
+                </div>
+
+                <div class="service-arrow">↗</div>
+
+            </a>
+
+
+            <a href="#contact" class="service reveal">
+
+                <div class="service-num">02</div>
+
+                <div>
+                    <h3>Ads</h3>
+                    <p>
+                        Meta and Google advertising with targeting,
+                        creative testing and performance tracking.
+                    </p>
+                </div>
+
+                <div class="service-arrow">↗</div>
+
+            </a>
+
+
+            <a href="#contact" class="service reveal">
+
+                <div class="service-num">03</div>
+
+                <div>
+                    <h3>Websites</h3>
+                    <p>
+                        Modern websites built to communicate your value
+                        clearly and make it easier for customers to act.
+                    </p>
+                </div>
+
+                <div class="service-arrow">↗</div>
+
+            </a>
+
+
+            <a href="#contact" class="service reveal">
+
+                <div class="service-num">04</div>
+
+                <div>
+                    <h3>Videos / Reels</h3>
+                    <p>
+                        Short-form video content created for attention,
+                        communication and social platforms.
+                    </p>
+                </div>
+
+                <div class="service-arrow">↗</div>
+
+            </a>
+
+
+            <a href="#contact" class="service reveal">
+
+                <div class="service-num">05</div>
+
+                <div>
+                    <h3>Product Shoot</h3>
+                    <p>
+                        Clean product visuals designed to make products
+                        easier to understand and more attractive online.
+                    </p>
+                </div>
+
+                <div class="service-arrow">↗</div>
+
+            </a>
+
+
+            <a href="#contact" class="service reveal">
+
+                <div class="service-num">06</div>
+
+                <div>
+                    <h3>Ideas</h3>
+                    <p>
+                        Campaign concepts, creative directions and marketing
+                        ideas built around what makes your business different.
+                    </p>
+                </div>
+
+                <div class="service-arrow">↗</div>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     INDUSTRIES
+========================= -->
+
+<section class="section industries" id="industries">
+
+    <div class="container">
+
+        <div class="reveal">
+
+            <div class="eyebrow">
+                Experience Across Markets
+            </div>
+
+            <h2 class="section-title">
+                Different businesses.<br>
+                One <span>digital mindset.</span>
+            </h2>
+
+            <p class="section-description">
+                We have worked across local businesses, professional
+                services, consumer brands and multiple industry categories.
+            </p>
+
+        </div>
+
+
+        <div class="industry-grid">
+
+            <div class="industry reveal">
+                <span class="industry-number">01</span>
+                <div>
+                    <h3>Restaurants</h3>
+                    <p>Food, offers, visibility and local reach.</p>
+                </div>
+            </div>
+
+            <div class="industry reveal">
+                <span class="industry-number">02</span>
+                <div>
+                    <h3>Salons</h3>
+                    <p>Beauty, grooming and customer acquisition.</p>
+                </div>
+            </div>
+
+            <div class="industry reveal">
+                <span class="industry-number">03</span>
+                <div>
+                    <h3>Real Estate</h3>
+                    <p>Property marketing and lead generation.</p>
+                </div>
+            </div>
+
+            <div class="industry reveal">
+                <span class="industry-number">04</span>
+                <div>
+                    <h3>Finance</h3>
+                    <p>Trust-focused financial communication.</p>
+                </div>
+            </div>
+
+            <div class="industry reveal">
+                <span class="industry-number">05</span>
+                <div>
+                    <h3>Architecture</h3>
+                    <p>Design-led digital presentation.</p>
+                </div>
+            </div>
+
+            <div class="industry reveal">
+                <span class="industry-number">06</span>
+                <div>
+                    <h3>Construction</h3>
+                    <p>Project visibility and business communication.</p>
+                </div>
+            </div>
+
+            <div class="industry reveal">
+                <span class="industry-number">07</span>
+                <div>
+                    <h3>Retail</h3>
+                    <p>Local visibility and promotional campaigns.</p>
+                </div>
+            </div>
+
+            <div class="industry reveal">
+                <span class="industry-number">08</span>
+                <div>
+                    <h3>Healthcare</h3>
+                    <p>Clear, responsible digital communication.</p>
+                </div>
+            </div>
+
+            <div class="industry reveal">
+                <span class="industry-number">09</span>
+                <div>
+                    <h3>Education</h3>
+                    <p>Awareness and audience-focused communication.</p>
+                </div>
+            </div>
+
+            <div class="industry reveal">
+                <span class="industry-number">10</span>
+                <div>
+                    <h3>Hotels</h3>
+                    <p>Hospitality promotion and digital presence.</p>
+                </div>
+            </div>
+
+            <div class="industry reveal">
+                <span class="industry-number">11</span>
+                <div>
+                    <h3>Opticals</h3>
+                    <p>Product and local business promotion.</p>
+                </div>
+            </div>
+
+            <div class="industry reveal">
+                <span class="industry-number">12</span>
+                <div>
+                    <h3>Paints</h3>
+                    <p>Product communication and retail marketing.</p>
+                </div>
+            </div>
+
+            <div class="industry reveal">
+                <span class="industry-number">13</span>
+                <div>
+                    <h3>Windows</h3>
+                    <p>Product-focused marketing and visibility.</p>
+                </div>
+            </div>
+
+            <div class="industry reveal">
+                <span class="industry-number">14</span>
+                <div>
+                    <h3>Architecture & Interiors</h3>
+                    <p>Visual storytelling for design businesses.</p>
+                </div>
+            </div>
+
+            <div class="industry reveal">
+                <span class="industry-number">15</span>
+                <div>
+                    <h3>Clothing</h3>
+                    <p>Brand presence and social content.</p>
+                </div>
+            </div>
+
+            <div class="industry reveal">
+                <span class="industry-number">16</span>
+                <div>
+                    <h3>FMCG</h3>
+                    <p>Product awareness and creative campaigns.</p>
+                </div>
+            </div>
+
+            <div class="industry reveal">
+                <span class="industry-number">17</span>
+                <div>
+                    <h3>Confectionery</h3>
+                    <p>Product-led creative communication.</p>
+                </div>
+            </div>
+
+            <div class="industry reveal">
+                <span class="industry-number">18</span>
+                <div>
+                    <h3>Furniture</h3>
+                    <p>Visual marketing for products and stores.</p>
+                </div>
+            </div>
+
+            <div class="industry reveal">
+                <span class="industry-number">19</span>
+                <div>
+                    <h3>C.A. & Professional Services</h3>
+                    <p>Professional digital presence and communication.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div style="margin-top:25px;color:#697581;font-size:12px;">
+            And more businesses are choosing digital.
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     WHY US
+========================= -->
+
+<section class="section" id="why">
+
+    <div class="container">
+
+        <div class="reveal">
+
+            <div class="eyebrow">
+                The CMH Approach
+            </div>
+
+            <h2 class="section-title">
+                Marketing should<br>
+                make <span>sense.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="why-grid">
+
+            <div class="why-card reveal">
+                <div class="why-number">01</div>
+                <h3>Business First</h3>
+                <p>
+                    We start with the business, audience and objective
+                    before deciding what content or campaign to create.
+                </p>
+            </div>
+
+            <div class="why-card reveal">
+                <div class="why-number">02</div>
+                <h3>Creative With Purpose</h3>
+                <p>
+                    Good design should not only look good. It should help
+                    people understand, remember or act.
+                </p>
+            </div>
+
+            <div class="why-card reveal">
+                <div class="why-number">03</div>
+                <h3>Clear Communication</h3>
+                <p>
+                    Simple communication, clear deliverables and a process
+                    that keeps everyone aware of what is happening.
+                </p>
+            </div>
+
+            <div class="why-card reveal">
+                <div class="why-number">04</div>
+                <h3>Measure & Improve</h3>
+                <p>
+                    Digital campaigns provide data that can be reviewed,
+                    tested and improved instead of relying only on assumptions.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     META ADS
+========================= -->
+
+<section class="section ads-section">
+
+    <div class="container">
+
+        <div class="ads-layout">
+
+            <div class="reveal">
+
+                <div class="eyebrow">
+                    A Different Way To Advertise
+                </div>
+
+                <h2 class="ads-title">
+                    Don't just<br>
+                    <span>advertise.</span><br>
+                    Measure it.
+                </h2>
+
+                <p class="section-description">
+                    Traditional advertising can still make sense for certain
+                    businesses. Digital advertising adds another option:
+                    campaigns can be targeted to defined audiences and their
+                    delivery and results can be measured through platform data.
+                </p>
+
+                <div style="margin-top:30px;">
+                    <a href="https://wa.me/916375637357?text=Hello%20Chirag%20Media%20House,%20I%20want%20to%20know%20about%20Meta%20Ads."
+                       target="_blank"
+                       class="btn btn-primary">
+                        Discuss Ads
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="ads-box reveal">
+
+                <h3>Traditional vs Digital</h3>
+
+                <div class="ads-row">
+                    <span>Audience Targeting</span>
+                    <span>Digital: Defined</span>
+                </div>
+
+                <div class="ads-row">
+                    <span>Campaign Tracking</span>
+                    <span>Digital: Available</span>
+                </div>
+
+                <div class="ads-row">
+                    <span>Creative Testing</span>
+                    <span>Digital: Possible</span>
+                </div>
+
+                <div class="ads-row">
+                    <span>Budget Control</span>
+                    <span>Digital: Flexible</span>
+                </div>
+
+                <div class="ads-row">
+                    <span>Offline Reach</span>
+                    <span>Print: Relevant</span>
+                </div>
+
+                <p class="ads-note">
+                    Actual advertising costs and results depend on the
+                    audience, location, objective, creative, competition,
+                    offer and campaign setup. There is no guaranteed
+                    cost-per-lead or return.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PROCESS
+========================= -->
+
+<section class="section process" id="process">
+
+    <div class="container">
+
+        <div class="reveal">
+
+            <div class="eyebrow">
+                How We Work
+            </div>
+
+            <h2 class="section-title">
+                From idea to<br>
+                <span>execution.</span>
+            </h2>
+
+            <p class="section-description">
+                A simple process keeps marketing focused and prevents
+                creative work from becoming random activity.
+            </p>
+
+        </div>
+
+
+        <div class="process-grid">
+
+            <div class="process-card reveal">
+
+                <div class="process-num">01 / UNDERSTAND</div>
+
+                <h3>Understand</h3>
+
+                <p>
+                    We understand your business, audience, offer,
+                    competition and what you want to achieve.
+                </p>
+
+            </div>
+
+
+            <div class="process-card reveal">
+
+                <div class="process-num">02 / PLAN</div>
+
+                <h3>Plan</h3>
+
+                <p>
+                    We decide the right channels, content direction,
+                    campaigns and priorities.
+                </p>
+
+            </div>
+
+
+            <div class="process-card reveal">
+
+                <div class="process-num">03 / CREATE</div>
+
+                <h3>Create</h3>
+
+                <p>
+                    Content, creatives, websites, videos and campaigns
+                    are developed according to the plan.
+                </p>
+
+            </div>
+
+
+            <div class="process-card reveal">
+
+                <div class="process-num">04 / IMPROVE</div>
+
+                <h3>Improve</h3>
+
+                <p>
+                    We review performance, learn from the data and
+                    improve the next cycle.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     TRUST / CLIENTS
+========================= -->
+
+<section class="section trust">
+
+    <div class="container">
+
+        <div class="trust-content reveal">
+
+            <div class="eyebrow">
+                Businesses We've Worked With
+            </div>
+
+            <h2 class="section-title">
+                Built through<br>
+                <span>real work.</span>
+            </h2>
+
+            <p class="section-description" style="margin-left:auto;margin-right:auto;">
+                84 clients, 252 projects and 500+ campaigns across multiple
+                business categories.
+            </p>
+
+        </div>
+
+
+        <div class="client-names reveal">
+
+            <div class="client-name">Ashutosh Ji</div>
+            <div class="client-name">Madhusudan Ji</div>
+            <div class="client-name">Rishabh Ji</div>
+            <div class="client-name">And many more</div>
+
+        </div>
+
+        <p class="client-note">
+            Client feedback is published with client approval.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FAQ
+========================= -->
+
+<section class="section" id="faq">
+
+    <div class="container">
+
+        <div class="reveal">
+
+            <div class="eyebrow">
+                Questions
+            </div>
+
+            <h2 class="section-title">
+                Frequently asked<br>
+                <span>questions.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="faq-list">
+
+            <div class="faq-item reveal">
+
+                <button class="faq-question">
+                    Do you work with local businesses?
+                    <span class="faq-icon">+</span>
+                </button>
+
+                <div class="faq-answer">
+                    Yes. We work with local businesses as well as businesses
+                    looking to build a larger digital presence.
+                </div>
+
+            </div>
+
+
+            <div class="faq-item reveal">
+
+                <button class="faq-question">
+                    What services do you provide?
+                    <span class="faq-icon">+</span>
+                </button>
+
+                <div class="faq-answer">
+                    Our core services include digital marketing, advertising,
+                    websites, videos and reels, product shoots and creative
+                    ideas.
+                </div>
+
+            </div>
+
+
+            <div class="faq-item reveal">
+
+                <button class="faq-question">
+                    Do you manage Meta Ads?
+                    <span class="faq-icon">+</span>
+                </button>
+
+                <div class="faq-answer">
+                    Yes. We can plan, create and manage Meta advertising
+                    campaigns depending on your business objective and
+                    requirements.
+                </div>
+
+            </div>
+
+
+            <div class="faq-item reveal">
+
+                <button class="faq-question">
+                    Can you build a website for my business?
+                    <span class="faq-icon">+</span>
+                </button>
+
+                <div class="faq-answer">
+                    Yes. We create modern business websites with a focus on
+                    clear communication, responsive design and useful
+                    customer actions.
+                </div>
+
+            </div>
+
+
+            <div class="faq-item reveal">
+
+                <button class="faq-question">
+                    Do you work only in Bikaner?
+                    <span class="faq-icon">+</span>
+                </button>
+
+                <div class="faq-answer">
+                    Chirag Media House is based in Bikaner, Rajasthan, but
+                    digital services can be delivered to businesses outside
+                    Bikaner as well.
+                </div>
+
+            </div>
+
+
+            <div class="faq-item reveal">
+
+                <button class="faq-question">
+                    How can I get started?
+                    <span class="faq-icon">+</span>
+                </button>
+
+                <div class="faq-answer">
+                    Send us a message through WhatsApp or the contact form.
+                    Tell us about your business and what you need help with,
+                    and we can discuss the next step.
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="section contact" id="contact">
+
+    <div class="container">
+
+        <div class="contact-layout">
+
+            <div class="reveal">
+
+                <div class="eyebrow">
+                    Start A Conversation
+                </div>
+
+                <h2 class="contact-title">
+                    Let's build<br>
+                    something <span>noticed.</span>
+                </h2>
+
+                <div class="contact-info">
+
+                    <div class="contact-item">
+
+                        <div class="contact-label">
+                            Phone / WhatsApp
+                        </div>
+
+                        <a href="tel:+916375637357" class="contact-value">
+                            +91 6375637357
+                        </a>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-label">
+                            Email
+                        </div>
+
+                        <a href="mailto:chiragadsworld@gmail.com"
+                           class="contact-value">
+                            chiragadsworld@gmail.com
+                        </a>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-label">
+                            Location
+                        </div>
+
+                        <div class="contact-value">
+                            Gangashahar, Bikaner, Rajasthan
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-label">
+                            Instagram
+                        </div>
+
+                        <a href="https://instagram.com/chirag.media.house"
+                           target="_blank"
+                           class="contact-value">
+                            @chirag.media.house
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-form reveal">
+
+                <form id="contactForm">
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Your Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="business">
+                            Business Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="business"
+                            placeholder="Enter your business name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="service">
+                            What do you need?
+                        </label>
+
+                        <input
+                            type="text"
+                            id="service"
+                            placeholder="Example: Meta Ads / Website / Social Media"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            placeholder="Tell us a little about your requirement"
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button type="submit" class="btn btn-primary" style="width:100%;border:0;cursor:pointer;">
+                        Send Inquiry on WhatsApp
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-top">
+
+            <div class="footer-brand">
+
+                <h2>
+                    CHIRAG MEDIA HOUSE
+                </h2>
+
+                <p>
+                    Digital marketing, creative, advertising and websites
+                    for businesses that want to get noticed.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#industries">Industries</a>
+                <a href="#process">Process</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div>
+                © 2026 Chirag Media House. All Rights Reserved.
+            </div>
+
+            <div>
+                Let Your Business Get Noticed.
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================
+     WHATSAPP
+========================= -->
+
+<a
+    href="https://wa.me/916375637357?text=Hello%20Chirag%20Media%20House,%20I%20want%20to%20discuss%20my%20business."
+    target="_blank"
+    class="whatsapp"
+    aria-label="Chat on WhatsApp"
+>
+    W
+</a>
+
+
+<script>
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", function(){
+
+    navLinks.classList.toggle("active");
+
+});
+
+
+document.querySelectorAll(".nav-links a").forEach(function(link){
+
+    link.addEventListener("click", function(){
+
+        navLinks.classList.remove("active");
+
+    });
+
+});
+
+
+/* =========================
+   SCROLL REVEAL
+========================= */
+
+document.documentElement.classList.add("js-ready");
+
+const revealElements = document.querySelectorAll(".reveal");
+
+const revealObserver = new IntersectionObserver(
+
+    function(entries){
+
+        entries.forEach(function(entry){
+
+            if(entry.isIntersecting){
+
+                entry.target.classList.add("visible");
+
+            }
+
+        });
+
+    },
+
+    {
+        threshold:0.12
+    }
+
+);
+
+revealElements.forEach(function(element){
+
+    revealObserver.observe(element);
+
+});
+
+
+/* =========================
+   COUNTERS
+========================= */
+
+const counters = document.querySelectorAll(".counter");
+
+const counterObserver = new IntersectionObserver(
+
+    function(entries){
+
+        entries.forEach(function(entry){
+
+            if(!entry.isIntersecting){
+                return;
+            }
+
+            const counter = entry.target;
+
+            const target = parseInt(counter.dataset.target);
+
+            let current = 0;
+
+            const duration = 1400;
+
+            const startTime = performance.now();
+
+            function updateCounter(currentTime){
+
+                const progress = Math.min(
+                    (currentTime - startTime) / duration,
+                    1
+                );
+
+                const eased = 1 - Math.pow(1 - progress, 3);
+
+                current = Math.floor(target * eased);
+
+                counter.textContent = current;
+
+                if(progress < 1){
+
+                    requestAnimationFrame(updateCounter);
+
+                }else{
+
+                    counter.textContent = target;
+
+                }
+
+            }
+
+            requestAnimationFrame(updateCounter);
+
+            counterObserver.unobserve(counter);
+
+        });
+
+    },
+
+    {
+        threshold:0.5
+    }
+
+);
+
+
+counters.forEach(function(counter){
+
+    counterObserver.observe(counter);
+
+});
+
+
+/* =========================
+   FAQ
+========================= */
+
+document.querySelectorAll(".faq-question").forEach(function(button){
+
+    button.addEventListener("click", function(){
+
+        const item = button.parentElement;
+
+        const wasActive = item.classList.contains("active");
+
+        document.querySelectorAll(".faq-item").forEach(function(faq){
+
+            faq.classList.remove("active");
+
+            const icon = faq.querySelector(".faq-icon");
+
+            if(icon){
+                icon.textContent = "+";
+            }
+
+        });
+
+        if(!wasActive){
+
+            item.classList.add("active");
+
+            const icon = button.querySelector(".faq-icon");
+
+            if(icon){
+                icon.textContent = "−";
+            }
+
+        }
+
+    });
+
+});
+
+
+/* =========================
+   CONTACT FORM
+========================= */
+
+document.getElementById("contactForm").addEventListener("submit", function(event){
+
+    event.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const business = document.getElementById("business").value.trim();
+    const service = document.getElementById("service").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    const whatsappMessage =
+        "Hello Chirag Media House,%0A%0A" +
+        "Name: " + encodeURIComponent(name) + "%0A" +
+        "Business: " + encodeURIComponent(business) + "%0A" +
+        "Requirement: " + encodeURIComponent(service) + "%0A" +
+        "Message: " + encodeURIComponent(message);
+
+    const whatsappURL =
+        "https://wa.me/916375637357?text=" + whatsappMessage;
+
+    window.open(whatsappURL, "_blank");
+
+});
+
+
+/* =========================
+   HEADER SCROLL EFFECT
+========================= */
+
+let lastScroll = 0;
+
+window.addEventListener("scroll", function(){
+
+    const header = document.querySelector("header");
+
+    const currentScroll = window.pageYOffset;
+
+    if(currentScroll > 50){
+
+        header.style.background = "rgba(3,10,17,.96)";
+
+    }else{
+
+        header.style.background = "rgba(7,26,46,.88)";
+
+    }
+
+    lastScroll = currentScroll;
+
+});
+
+</script>
+
+</body>
+</html>
